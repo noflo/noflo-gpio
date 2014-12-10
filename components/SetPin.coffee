@@ -30,5 +30,6 @@ exports.getComponent = ->
     state = if value then gpio.HIGH else gpio.LOW
     c.io.write state
     c.outPorts.out.send value
+    c.outPorts.out.disconnect()
 
   return c
