@@ -9,7 +9,7 @@ describe 'ListenChange component', ->
   outImage = null
 
   beforeEach ->
-    c = ApplyVignette.getComponent()
+    c = ListenChange.getComponent()
     inImage = noflo.internalSocket.createSocket()
     outImage = noflo.internalSocket.createSocket()
     c.inPorts.canvas.attach inImage
