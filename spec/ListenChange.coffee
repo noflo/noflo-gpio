@@ -10,14 +10,15 @@ describe 'ListenChange component', ->
 
   beforeEach ->
     c = ListenChange.getComponent()
-    inImage = noflo.internalSocket.createSocket()
-    outImage = noflo.internalSocket.createSocket()
-    c.inPorts.canvas.attach inImage
-    c.outPorts.canvas.attach outImage
+    pin = noflo.internalSocket.createSocket()
+    out = noflo.internalSocket.createSocket()
+    c.inPorts.pin.attach pin
+    c.outPorts.out.attach out
  
   describe 'when instantiated', ->
-    it 'should have one input port', ->
-      chai.expect(c.inPorts.canvas).to.be.an 'object'
+    it 'should have two input ports', ->
+      chai.expect(c.inPorts.pin).to.be.an 'object'
+      chai.expect(c.inPorts.close).to.be.an 'object'
     it 'should have one output port', ->
-      chai.expect(c.outPorts.canvas).to.be.an 'object'
+      chai.expect(c.outPorts.out).to.be.an 'object'
 
