@@ -37,7 +37,8 @@
   "keywords": [],
   "noflo": {
     "components": {
-      "ListenChange": "components/ListenChange.coffee"
+      "ListenChange": "components/ListenChange.coffee",
+      "SetPin": "components/SetPin.coffee"
     }
   }
 }

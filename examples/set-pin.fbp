@@ -1,0 +1,2 @@
+'38' -> PIN io(SetPin) OUT -> IN out(core/Output)
+'true' -> IN io
