@@ -26,7 +26,8 @@ exports.getComponent = ->
     c.io.open()
     c.io.setMode gpio.IN
     c.io.on 'changed', (value) ->
-      c.outPorts.out.send value
+      b = if value == 0 then false else true
+      c.outPorts.out.send b
     c.io.listen()
 
   return c
