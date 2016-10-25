@@ -24,7 +24,7 @@
     "noflo": "~0.5.0"
   },
   "devDependencies": {
-    "chai": "~1.9.0",
+    "chai": "~3.5.0",
     "coffee-script": "^1.8.0",
     "grunt": "~0.4.1",
     "grunt-coffeelint": "~0.0.6",
