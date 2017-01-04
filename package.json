@@ -6,35 +6,35 @@
     "name": "Jon Nordby",
     "email": "jononor@gmail.com"
   },
+  "engines": {
+    "node": "0.10"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/noflo/noflo-gpio.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "undefined/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
     "node-gpio": "^0.1.1",
-    "noflo": "~0.5.0"
+    "noflo": "0.x >= 0.5"
   },
   "devDependencies": {
-    "chai": "~1.9.0",
-    "coffee-script": "^1.8.0",
-    "grunt": "~0.4.1",
-    "grunt-coffeelint": "~0.0.6",
-    "grunt-contrib-coffee": "~0.11.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-mocha-test": "^0.12.4",
-    "grunt-noflo-manifest": "^0.1.1",
-    "mocha": "~2.5.3"
+    "chai": "~3.5.0",
+    "coffee-script": "^1.11.1",
+    "grunt": "~1.0.1",
+    "grunt-coffeelint": "^0.0.16",
+    "grunt-contrib-coffee": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "grunt-noflo-manifest": "^0.1.12",
+    "mocha": "~3.2.0"
   },
-  "keywords": [],
+  "keywords": [
+    "noflo"
+  ],
   "noflo": {
     "components": {
       "ListenChange": "components/ListenChange.coffee",
