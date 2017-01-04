@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git://github.com/noflo/noflo-gpio.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "undefined/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "scripts": {
     "test": "grunt test"
   },
@@ -34,7 +29,7 @@
     "grunt-noflo-manifest": "^0.1.1",
     "mocha": "~2.5.3"
   },
-  "keywords": [],
+  "keywords": ["noflo"],
   "noflo": {
     "components": {
       "ListenChange": "components/ListenChange.coffee",
