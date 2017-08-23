@@ -6,9 +6,6 @@
     "name": "Jon Nordby",
     "email": "jononor@gmail.com"
   },
-  "engines": {
-    "node": "0.10"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/noflo/noflo-gpio.git"
