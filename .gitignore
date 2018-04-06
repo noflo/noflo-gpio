@@ -1,6 +1,5 @@
 /node_modules/
 /components/*/
-/spec/*.js
 /spec/fixtures/*/*.out
 /browser/
 /spec/*.xml
