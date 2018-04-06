@@ -1,6 +1,8 @@
 const noflo = require('noflo');
 const gpio = require('rpi-gpio');
 
+// @runtime noflo-nodejs
+
 exports.getComponent = () => {
   const c = new noflo.Component();
   c.description = 'Set values on a GPIO pin';
@@ -57,4 +59,5 @@ exports.getComponent = () => {
       });
     });
   });
+  return c;
 };
