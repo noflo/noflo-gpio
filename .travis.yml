@@ -1,7 +1,11 @@
 language: node_js
 node_js:
-  - "0.10"
-before_install:
- - sudo apt-get update -qq
-before_script:
-  - npm install -g grunt-cli
+- lts/*
+deploy:
+  provider: npm
+  email: henri.bergius@iki.fi
+  api_key:
+    secure: SJtrwIlMnQb+CjeuPYSdH3sG0gJxVidWV9wBznHgntF4NGZVQoko1ATjgUgrth+o30jfPl0UXKoqdVbqUn2YNgf4B1KFW0wXHrCu3JUA72lXNJCwZqthOjuKnVPNusJDRhitEz+8MAnK9uLhmVXEsu1DsUP+wtmHcsW9YAcDy7w=
+  on:
+    tags: true
+    repo: noflo/noflo-gpio
