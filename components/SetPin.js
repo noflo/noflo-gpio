@@ -6,7 +6,7 @@ const gpio = require('rpi-gpio');
 exports.getComponent = () => {
   const c = new noflo.Component();
   c.description = 'Set values on a GPIO pin';
-  c.icon = 'thumb-tack';
+  c.icon = 'toggle-on';
   c.inPorts.add('pin', {
     datatype: 'integer',
     control: true,
